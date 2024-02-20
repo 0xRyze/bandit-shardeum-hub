@@ -1,0 +1,171 @@
+@import "./font.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Helvetica Neue LT Pro", sans-serif
+}
+
+[data-rk]{
+    width: 100%;
+    height: 100%;
+}
+
+[data-rk] ._9pm4ki3{
+    left: 0;
+    top: 0;
+}
+
+.font-helvetica{
+    font-family: "Helvetica Neue LT Pro Bold Cd", sans-serif;
+}
+
+h1{
+    letter-spacing: 0;
+    font-size: calc(165px / .96 );
+}
+
+h2{
+    font-size: 85px
+}
+
+.s-navigation{
+
+}
+
+.s-navigation-item{
+    font-family: "Helvetica Neue LT Pro", sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+    line-height: 1;
+    margin-bottom: 28px
+}
+
+.s-navigation-item2{
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 28px
+
+}
+
+.s-navigation-item__image{
+    width: 17px !important;
+    height: 17px !important;
+    margin-left: 10px;
+}
+
+.s-navigation-item__image--rotate{
+    transform: rotate(90deg);
+}
+
+/*pagination*/
+
+.s-pagination{
+    display: flex;
+}
+.s-pagination li{
+    width: 44px;
+    height: 44px;
+    color: #000;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px;
+    font-weight: 700;
+}
+.s-pagination .selected{
+    border-radius: 20px;
+    box-shadow: 6px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+    border-color: #3042FB;
+}
+.s-pagination li:hover{
+    width: 44px;
+    height: 44px;
+    border-radius: 20px;
+    box-shadow: 6px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+    border-color: #3042FB;
+}
+
+.s-pagination .dots:hover{
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+
+.bad-quest__details-profile--icon{
+    width: 20px !important;
+}
+
+.bad-powered_by_bandit__content--logo{
+    width: 20px !important;
+}
+
+.bad-quest__leaderboard-image{
+    width: 28px !important;
+}
+
+.bad-quest__participants--item img{
+    width: 28px;
+}
+
+.bad-quest_task__not_open--task-icon{
+    width: 28px !important;
+}
+
+.bad-quest__view--scroll_area{
+ height: 400px;
+}
+
+
+
+
+
+/*rainbow kit css*/
+[data-rk]{
+    --rk-colors-modalBackground: #FCFAEF !important;
+}
+
+
+/*bandit css*/
+.bad-dialog__primitive--content{
+    background-color: #FCFAEF !important;
+    font-family: "Helvetica Neue LT Pro", sans-serif;
+}
+
+.bad-quest__leaderboard--table_td_user img{
+    width: 20px;
+    height: 20px;
+}
+
+.bad-quest__leaderboard--table_td_user p{
+    font-size: 16px;
+}
+
+.bad-quest__details-profile{
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.bad-quest__details-contract--address{
+    margin-top: 0;
+}
+
+
