@@ -14,7 +14,7 @@ const Table = ({ data = [], isLoading }) => {
           Point Scored
         </div>
       </div>
-      <div className="mt-12">
+      <div className="mt-12 w-full">
         {isLoading
           ? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => <Loader key={i} />)
           : data.map(({ rank, walletAddress, points }) => (
@@ -30,7 +30,7 @@ const Table = ({ data = [], isLoading }) => {
   );
 };
 
-const Loader = () => {
+export const Loader = () => {
   return (
     <div className="mt-2">
       <div className="flex h-[80px] bg-[#A4FF00] justify-between rounded-xl border-2 border-solid border-black p-6">
@@ -44,7 +44,7 @@ const Loader = () => {
 
 export const TableItem = ({ rank, walletAddress, points }) => {
   return (
-    <div className="mt-2">
+    <div className="mt-2 w-full">
       <div className="flex h-[80px] bg-[#A4FF00] rounded-xl border-2 border-solid border-black p-6">
         <div className="flex items-center flex-1 text-left text-[30px] font-bold ">
           {rank <= 9 ? `0${rank}` : rank}
@@ -55,7 +55,7 @@ export const TableItem = ({ rank, walletAddress, points }) => {
             target="_blank"
             className="flex items-baseline"
           >
-            {truncateAddress(walletAddress, 8)}{" "}
+            {truncateAddress(walletAddress, 6)}{" "}
             <img
               src="/externalIcon.svg"
               alt=""

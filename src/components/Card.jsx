@@ -10,7 +10,7 @@ const Card = ({
     <div className={`bucket ${cardColor} bdr has-arr-xmov has-follow anim`}>
       <div className="top !pr-[20px] md:!py-[60px]">
         <h2
-          className="head-anim text-[32px] md:text-[60px]"
+          className="head-anim text-[32px] md:text-[50px] md:max-w-[70%] md:min-h-[60px]"
           style={{
             opacity: 1,
             translate: "none",
@@ -23,7 +23,7 @@ const Card = ({
         </h2>
         {iconUrl && (
           <div
-            className="bucket-img auto-sc flex justify-center !relative md:!absolute"
+            className="bucket-img auto-sc flex justify-center !relative md:!absolute md:h-[120px]"
             style={{
               translate: "none",
               rotate: "none",
@@ -33,7 +33,11 @@ const Card = ({
           >
             <img
               src={iconUrl}
-              style={{ width: "100%", height: "auto", maxWidth: 120 }}
+              style={{
+                width: "100%",
+                height: "auto",
+                maxWidth: 120,
+              }}
             />
           </div>
         )}

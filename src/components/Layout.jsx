@@ -60,13 +60,13 @@ const Layout = ({ children }) => {
         <BanditProvider>
           <div className="flex w-full h-full">
             {sidebarOpen && (
-              <div className="w-full md:w-[400px] h-full fixed z-40">
+              <div className="w-full md:w-[22%] h-full fixed z-40">
                 <SideBar closeSidebar={() => setSidebarOpen(false)} />
               </div>
             )}
             <main
               style={{ backgroundColor: isHomePage ? home : generic }}
-              className={`flex-1 md:ml-[400px] md:w-[calc(100% - 400px)] z-10`}
+              className={`flex-1 md:ml-[22%] w-full md:w-[calc(100% - 22%)] z-10`}
             >
               <div className="px-[16px] md:px-[100px] mb-[24px]">
                 <Header openSidebar={() => setSidebarOpen(true)} />

@@ -33,10 +33,6 @@ const BanditQuest = () => {
     return questList?.data || [];
   }, [questList]);
 
-  const onClickCard = (id) => {
-    setCollectionId(id);
-  };
-
   return (
     <Layout>
       <div>
@@ -48,7 +44,7 @@ const BanditQuest = () => {
 
             <div className="mt-[32px] md:mt-20">
               <div className="mb-16">
-                <LeaderBoardRank />
+                <LeaderBoardRank questId={1110} />
               </div>
               <Table isLoading={loading} data={leaderboardData} />
               <div className="mt-[30px] flex justify-center">
@@ -62,7 +58,7 @@ const BanditQuest = () => {
             </div>
           </div>
 
-          <div className="projects-grid mod-grid-sm p-sm mt-[100px]">
+          <div className="projects-grid mod-grid-sm p-sm mt-[100px] md:!grid-cols-3">
             {(questListData || []).map(({ profile, collectionId }) => (
               <Link
                 key={collectionId}

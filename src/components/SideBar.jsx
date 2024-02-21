@@ -22,7 +22,7 @@ const SideBar = ({ closeSidebar }) => {
   }, [isQuestPage, isGalxeQuestPage, isShardeumQuestPage]);
 
   return (
-    <div className="bg-[#3042FB] p-[16px]  md:p-[40px] h-full overflow-y-auto">
+    <div className="flex flex-col bg-[#3042FB] p-[16px]  md:p-[40px] h-full overflow-y-auto">
       <div className="flex justify-between items-center">
         <img src={logo} alt="logo" className="!w-[217px] !h-[46px]" />
         <div
@@ -32,7 +32,7 @@ const SideBar = ({ closeSidebar }) => {
           <img src={"/cross.svg"} alt="logo" className="!w-[14px] !h-[14px]" />
         </div>
       </div>
-      <div className="mt-[70px] md:mt-[124px]">
+      <div className="mt-[70px] md:mt-[100px]">
         <ul className="s-navigation">
           <Link to="/">
             <li className="s-navigation-item md:text-[40px]">
@@ -122,9 +122,18 @@ const SideBar = ({ closeSidebar }) => {
           </a>
         </ul>
       </div>
-      <div className="block md:hidden">
+      <div className="mt-auto block md:hidden">
         <Button title="Connect Wallet" onClick={openConnectModal} />
       </div>
+
+      <a href="https://bandit.network" target="_blank" className="mt-auto">
+        <div className="flex flex-col items-center justify-center w-full">
+          <h1 className="text-[14px] text-center mb-2 text-white">
+            Powered By
+          </h1>
+          <img src="/bandit-white.png" alt="bandit" className="!w-[100px]" />
+        </div>
+      </a>
     </div>
   );
 };

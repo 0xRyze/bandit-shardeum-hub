@@ -2,7 +2,7 @@ const Button = ({ title, onClick }) => {
   return (
     <div className="cta-header" onClick={onClick}>
       <a
-        className="cta-btn split has-arr sa cursor-pointer"
+        className="cta-btn split has-arr sa cursor-pointer w-full"
         data-text={title}
         style={{ display: "inline-flex", opacity: 1 }}
       >

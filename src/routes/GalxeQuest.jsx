@@ -41,7 +41,7 @@ const GalxeQuest = () => {
 
             <div className="mt-[32px] md:mt-20">
               <div className="mb-16">
-                <LeaderBoardRank />
+                <LeaderBoardRank questId={6999999} />
               </div>
               <Table isLoading={loading} data={leaderboardData} />
               <div className="mt-[30px] flex justify-center">

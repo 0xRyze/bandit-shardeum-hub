@@ -2,6 +2,7 @@ import Card from "../components/Card.jsx";
 import Button from "../components/Button.jsx";
 import "../styles/home.css";
 import Layout from "../components/Layout.jsx";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <Layout>
@@ -51,7 +52,9 @@ const Home = () => {
           </div>
 
           <div className="my-[80px] flex justify-center">
-            <Button title="Participate in Incentivized Testnet" />
+            <Link to="/quest">
+              <Button title="Participate in Incentivized Testnet" />
+            </Link>
           </div>
         </div>
       </div>

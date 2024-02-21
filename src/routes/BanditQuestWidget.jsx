@@ -7,7 +7,7 @@ const BanditQuestWidget = () => {
 
   return (
     <Layout>
-      <div className="px-[16px] md:px-[100px] mb-[120px]">
+      <div className="px-[16px] md:px-[100px] mb-[120px] min-h-[80vh]">
         {questId && (
           <BanditQuestWidgetSrc
             collectionId={questId}
